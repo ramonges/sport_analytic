@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-# =============================================================================
-# run_all.py
-# Execute the full pipeline in order.
-# You can run individual steps or the full sequence.
-#
-# Usage:
-#   python run_all.py             # full pipeline
-#   python run_all.py --from 3   # resume from step 3
-#   python run_all.py --only 6   # run only step 6
-# =============================================================================
-
 import argparse
 import logging
 import sys
@@ -21,14 +9,15 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 STEPS = {
-    1: ("step_01_bootstrap",        "Discover sportId / tournamentId / seasonId"),
-    2: ("step_02_fetch_fixtures",   "Enumerate all EPL fixtures"),
+    1: ("step_01_bootstrap",             "Discover sportId / tournamentId / seasonId"),
+    2: ("step_02_fetch_fixtures",        "Enumerate all EPL fixtures"),
     3: ("step_03_fetch_historical_odds", "Pull full price timeline (slow, run once)"),
-    4: ("step_04_fetch_clv",        "Pull native CLV endpoint"),
-    5: ("step_05_build_snapshots",  "Build T-20…T-1 snapshot table"),
-    6: ("step_06_clv_scoring",      "Compute CLV accuracy per bookmaker"),
-    7: ("step_07_leader_follower",  "Leader / follower detection"),
-    8: ("step_08_arb_detection",    "Arbitrage window detection"),
+    4: ("step_04_fetch_clv",             "Pull native CLV endpoint"),
+    5: ("step_05_build_snapshots",       "Build T-30h…T-1min snapshot table"),
+    6: ("step_06_clv_scoring",           "Compute CLV accuracy per bookmaker"),
+    7: ("step_07_leaders_followers",     "Leader / follower detection"),
+    8: ("step_08_arb_detection",         "Arbitrage window detection"),
+    9: ("step_09_vig_evolution",         "Vig evolution chart per bookmaker"),
 }
 
 

@@ -1,10 +1,5 @@
-# =============================================================================
 # step_02_fetch_fixtures.py
-# Fetch PAST EPL fixtures using a date range (startTimeFrom / startTimeTo).
-# The API only returns upcoming games by default — time filters give us history.
-#
-# FIXTURE_LIMIT = 10  <- change to None for full season
-# =============================================================================
+# Fetch past EPL fixtures
 
 FIXTURE_LIMIT = None
 
@@ -76,16 +71,12 @@ def parse_fixtures(raw) -> list:
 
 
 def fetch_past_fixtures(tournament_id: int, weeks_back: int = 36) -> list:
-    """
-    Fetch past EPL fixtures by querying backward in time using startTimeFrom/startTimeTo.
-    Queries week by week to stay within API pagination limits.
-    """
     now       = int(time.time())
     week_sec  = 7 * 24 * 3600
     all_fixtures = []
     seen_ids     = set()
 
-    logger.info("Fetching past fixtures for tournamentId=%s (last %d weeks)...",
+    logger.info("Fetching past fixtures for tournamentId=%s (last %d weeks)",
                 tournament_id, weeks_back)
 
     for w in range(weeks_back):
@@ -113,7 +104,7 @@ def fetch_past_fixtures(tournament_id: int, weeks_back: int = 36) -> list:
         except Exception as e:
             logger.warning("    → Error fetching week -%d: %s", w + 1, e)
 
-    # Sort by most recent first
+    # We sort by most recent first
     all_fixtures.sort(key=lambda x: x["start_time"], reverse=True)
     return all_fixtures
 

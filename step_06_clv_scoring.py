@@ -1,12 +1,5 @@
-# =============================================================================
 # step_06_clv_scoring.py
 # Compute CLV accuracy per bookmaker per snapshot window.
-# Uses the native CLV data (step_04) as the closing line benchmark.
-#
-# Produces:
-#   data/clv_scores.csv         — per-fixture per-bookmaker per-snapshot CLV delta
-#   output/accuracy_scorecard.csv — aggregated ranking table
-# =============================================================================
 
 import json
 import logging
@@ -30,17 +23,6 @@ SNAPSHOTS_FILE   = os.path.join(DATA_DIR, "snapshots.csv")
 CLV_DIR          = os.path.join(DATA_DIR, "clv")
 CLV_SCORES_FILE  = os.path.join(DATA_DIR, "clv_scores.csv")
 SCORECARD_FILE   = os.path.join(OUTPUT_DIR, "accuracy_scorecard.csv")
-
-
-def no_vig_prob_single(price: float, counterpart_price: float) -> float:
-    """Implied prob for one side of a two-outcome market, margin-removed."""
-    if not price or not counterpart_price:
-        return np.nan
-    raw_self  = 1.0 / price
-    raw_other = 1.0 / counterpart_price
-    total     = raw_self + raw_other
-    return raw_self / total if total else np.nan
-
 
 def load_closing_lines(fixture_id: str) -> dict:
     """
@@ -78,25 +60,25 @@ def load_closing_lines(fixture_id: str) -> dict:
 
 
 def compute_clv_scores(snapshots_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    For each snapshot row, compute the CLV delta:
-      clv_delta = no_vig_prob(snapshot_price) − no_vig_prob(closing_price)
+    # Pre-compute overround per (fixture, bookmaker, market_id, snapshot_mins)
+    overround_map = {}
+    for keys, grp in snapshots_df.groupby(
+            ["fixture_id", "bookmaker", "market_id", "snapshot_mins"]):
+        prices = grp["price"].dropna().values
+        if len(prices) == 2 and all(p > 1.0 for p in prices):
+            overround_map[keys] = round(1/prices[0] + 1/prices[1], 6)
 
-    Positive = book was offering stale/better-than-closing value (soft)
-    Near 0   = book was already at market (sharp)
-    """
     rows = []
-
     for fixture_id, group in snapshots_df.groupby("fixture_id"):
         closing_lines = load_closing_lines(fixture_id)
         if not closing_lines:
             continue
 
         for _, row in group.iterrows():
-            bk       = row["bookmaker"]
-            oid      = int(row["outcome_id"]) if pd.notna(row["outcome_id"]) else None
-            snap_px  = row["price"]
-            mins     = row["snapshot_mins"]
+            bk      = row["bookmaker"]
+            oid     = int(row["outcome_id"]) if pd.notna(row["outcome_id"]) else None
+            snap_px = row["price"]
+            mins    = row["snapshot_mins"]
 
             if not oid or pd.isna(snap_px):
                 continue
@@ -107,10 +89,14 @@ def compute_clv_scores(snapshots_df: pd.DataFrame) -> pd.DataFrame:
             if not closing_px or closing_px <= 1.0:
                 continue
 
-            # Simplified CLV: raw implied prob difference (no paired-outcome needed)
+            # CLV delta unchanged, raw implied prob
             snap_impl    = 1.0 / snap_px
             closing_impl = 1.0 / closing_px
             clv_delta    = snap_impl - closing_impl
+
+            overround = overround_map.get(
+                (fixture_id, bk, row["market_id"], mins)
+            )
 
             rows.append({
                 "fixture_id":    fixture_id,
@@ -124,16 +110,14 @@ def compute_clv_scores(snapshots_df: pd.DataFrame) -> pd.DataFrame:
                 "closing_impl":  closing_impl,
                 "clv_delta":     clv_delta,
                 "abs_clv":       abs(clv_delta),
+                "overround":     overround,   #None if market not fully paired
             })
 
     return pd.DataFrame(rows)
 
 
 def build_accuracy_scorecard(clv_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Aggregate CLV metrics per bookmaker per snapshot window.
-    Lower mean_abs_clv = more accurate (closer to closing) at that snapshot.
-    """
+#    Aggregate CLV metrics per bookmaker per snapshot window. Lower mean_abs_clv = more accurate (closer to closing) at that snapshot.
     agg = (
         clv_df
         .groupby(["bookmaker", "snapshot_mins"])
@@ -144,17 +128,35 @@ def build_accuracy_scorecard(clv_df: pd.DataFrame) -> pd.DataFrame:
             clv_corr=("snap_impl", lambda x: x.corr(
                 clv_df.loc[x.index, "closing_impl"])),
             n_observations=("abs_clv", "count"),
+            mean_overround=("overround", "mean"),
         )
         .reset_index()
     )
 
-    # Pivot so columns = snapshot windows for easy ranking
+    # Pivot mean_abs_clv so columns = snapshot windows for easy ranking
     pivot = agg.pivot(index="bookmaker", columns="snapshot_mins", values="mean_abs_clv")
     pivot.columns = [f"clv_T-{c}min" for c in pivot.columns]
     pivot = pivot.reset_index()
 
-    # Add overall score = weighted average (closer to kickoff = higher weight)
-    weights = {1: 3, 2: 2, 5: 1.5, 10: 1.0, 15: 0.8, 20: 0.5}
+    # Also pivot mean_overround for vig evolution,  used by step_09
+    vig_pivot = agg.pivot(index="bookmaker", columns="snapshot_mins", values="mean_overround")
+    vig_pivot.columns = [f"vig_T-{c}min" for c in vig_pivot.columns]
+    vig_pivot = vig_pivot.reset_index()
+    pivot = pivot.merge(vig_pivot, on="bookmaker", how="left")
+
+    # Weights: closer to kickoff = higher weight
+    weights = {
+        1:    3.0,
+        5:    2.5,
+        10:   2.0,
+        20:   1.5,
+        30:   1.2,
+        60:   1.0,
+        300:  0.7,
+        720:  0.5,
+        1440: 0.3,
+        1800: 0.2,
+    }
     available_cols = [f"clv_T-{m}min" for m in SNAPSHOT_MINUTES if f"clv_T-{m}min" in pivot.columns]
 
     def weighted_score(row):
@@ -162,7 +164,7 @@ def build_accuracy_scorecard(clv_df: pd.DataFrame) -> pd.DataFrame:
         total_v = 0
         for col in available_cols:
             mins = int(col.replace("clv_T-", "").replace("min", ""))
-            w    = weights.get(mins, 1)
+            w    = weights.get(mins, 1.0)
             v    = row[col]
             if pd.notna(v):
                 total_v += v * w
@@ -172,10 +174,12 @@ def build_accuracy_scorecard(clv_df: pd.DataFrame) -> pd.DataFrame:
     pivot["weighted_clv_score"] = pivot.apply(weighted_score, axis=1)
     pivot = pivot.sort_values("weighted_clv_score")
 
-    # Flag soft books (T-2 CLV > 1.5x median)
-    if "clv_T-2min" in pivot.columns:
-        median_t2 = pivot["clv_T-2min"].median()
-        pivot["soft_book"] = pivot["clv_T-2min"] > (1.5 * median_t2)
+    # Soft book flag, dynamically uses closest available window to kickoff
+    clv_cols = [c for c in pivot.columns if c.startswith("clv_T-")]
+    if clv_cols:
+        closest_col  = min(clv_cols, key=lambda c: int(c.replace("clv_T-", "").replace("min", "")))
+        median_close = pivot[closest_col].median()
+        pivot["soft_book"] = pivot[closest_col] > (1.5 * median_close)
     else:
         pivot["soft_book"] = False
 

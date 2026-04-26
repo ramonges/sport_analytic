@@ -1,17 +1,5 @@
-# =============================================================================
 # step_08_arb_detection.py
 # At each snapshot, check if any pair of bookmakers creates an arb
-# (combined implied probability < 100%) on the same market.
-#
-# Fixes vs previous version:
-#   1. Self-arb filtered: best price on side A and side B must come from
-#      DIFFERENT bookmakers (cannot bet both sides with the same book).
-#   2. Main-line filter: only main_line=True rows are compared, ensuring
-#      both sides correspond to the same handicap/total line.
-#
-# Produces:
-#   output/arb_windows.csv
-# =============================================================================
 
 import logging
 import os
@@ -32,19 +20,15 @@ ARB_OUTPUT     = os.path.join(OUTPUT_DIR, "arb_windows.csv")
 
 def detect_arb_in_market(group: pd.DataFrame) -> list[dict]:
     """
-    For a single (fixture_id, market_id, snapshot_mins) group — already filtered
-    to main_line=True rows only — find the best price for each outcome_id across
-    all bookmakers.
-
     An arbitrage requires:
       1. over_round < 1.0  (combined implied prob < 100%)
-      2. best_a_book != best_b_book  (must be different bookmakers — no self-arb)
+      2. must be different bookmakers
     """
     arbs = []
 
     outcome_ids = group["outcome_id"].dropna().unique()
     if len(outcome_ids) != 2:
-        return arbs  # skip non-two-sided markets
+        return arbs 
 
     oid_a, oid_b = sorted(outcome_ids)
 
@@ -64,7 +48,7 @@ def detect_arb_in_market(group: pd.DataFrame) -> list[dict]:
     if best_a_price <= 1.0 or best_b_price <= 1.0:
         return arbs
 
-    # FIX 1: self-arb guard — both sides must come from different bookmakers
+    # both sides must come from different bookmakers
     if best_a_book == best_b_book:
         return arbs
 
@@ -99,7 +83,7 @@ def main():
     df = pd.read_csv(SNAPSHOTS_FILE)
     logger.info("Total snapshot rows: %d", len(df))
 
-    # FIX 2: main_line filter — only compare economically equivalent lines
+    #  Only compare economically equivalent lines
     if "main_line" in df.columns:
         before = len(df)
         df = df[df["main_line"] == True]
@@ -138,24 +122,23 @@ def main():
     pair_counts = (arb_df["book_side_a"] + " / " + arb_df["book_side_b"]).value_counts().head(10)
     logger.info("\nTop arb book pairs (directional):\n%s", pair_counts.to_string())
 
-    # Summary by book pair (symmetric)
+    # Summary by book pair 
     arb_df["book_pair"] = arb_df.apply(
         lambda r: " / ".join(sorted([r["book_side_a"], r["book_side_b"]])), axis=1
     )
     sym_pair_counts = arb_df["book_pair"].value_counts().head(10)
     logger.info("\nTop arb book pairs (symmetric):\n%s", sym_pair_counts.to_string())
 
-    # Filtered summary (margin < 5% — removes likely stale-price artefacts)
+    # Filtered summary (margin < 5%)
     real_arb = arb_df[arb_df["arb_margin_%"] < 5.0]
-    logger.info("\n--- Filtered arbs (margin < 5%%, likely actionable): %d ---", len(real_arb))
+    logger.info("Filtered arbs (margin < 5%%, likely actionable): %d", len(real_arb))
     if not real_arb.empty:
         logger.info("Mean margin: %.4f%%  Max margin: %.4f%%",
                     real_arb["arb_margin_%"].mean(), real_arb["arb_margin_%"].max())
         real_pair = real_arb["book_pair"].value_counts().head(10)
         logger.info("Top pairs (filtered):\n%s", real_pair.to_string())
 
-    logger.info("\nSaved to %s", ARB_OUTPUT)
-
+    logger.info("Saved to %s", ARB_OUTPUT)
 
 if __name__ == "__main__":
     main()

@@ -1,11 +1,4 @@
-# =============================================================================
 # step_05_build_snapshots.py
-# For each fixture × bookmaker × outcome, extract the price active at
-# T-20, T-15, T-10, T-5, T-2, T-1 minutes before kickoff (forward-fill).
-#
-# Reads both .json.gz (new) and .json (legacy) files from data/historical/
-# Produces: data/snapshots.csv
-# =============================================================================
 
 import gzip
 import json
@@ -15,7 +8,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from config import DATA_DIR, SNAPSHOT_MINUTES
+from config import DATA_DIR, SNAPSHOT_MINUTES, EXCHANGE_COMMISSION, MAX_STALENESS_MINUTES
+
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(levelname)s  %(message)s")
 logger = logging.getLogger(__name__)
@@ -32,29 +26,39 @@ def load_historical(fp: Path) -> dict:
     with open(s) as f:
         return json.load(f)
 
+def net_exchange_price(raw_price: float, bookmaker: str) -> float:
+    c = EXCHANGE_COMMISSION.get(bookmaker.lower())
+    if c is None:
+        return raw_price
+    if not raw_price or raw_price <= 1.0:
+        return raw_price
+    return 1.0 + (raw_price - 1.0) * (1.0 - c)
+
 
 def find_historical_files() -> list:
-    """Return de-duplicated list of historical files, preferring .json.gz over .json."""
     gz_files   = {f.stem.replace(".json", ""): f for f in Path(HISTORICAL_DIR).glob("*.json.gz")}
     json_files = {f.stem: f                      for f in Path(HISTORICAL_DIR).glob("*.json")}
-    merged = {**json_files, **gz_files}   # gz wins on collision
+    merged = {**json_files, **gz_files}   # gz wins on collision - Compressed files for disk space
     return sorted(merged.values())
 
 
 def get_price_at_snapshot(entries: list, kickoff_ms: int, minutes_before: int):
-    target_ms  = kickoff_ms - (minutes_before * 60 * 1000)
-    candidates = [e for e in entries if e.get("changedAt", 0) <= target_ms]
+    target_ms    = kickoff_ms - (minutes_before * 60 * 1000)
+    stale_cutoff = target_ms - (MAX_STALENESS_MINUTES * 60 * 1000)
+    candidates   = [
+        e for e in entries
+        if stale_cutoff <= e.get("changedAt", 0) <= target_ms
+    ]
     if not candidates:
         return None
     return max(candidates, key=lambda x: x["changedAt"])
 
-
 def build_snapshots_for_fixture(payload: dict) -> list:
     fixture_id = payload["fixture_id"]
-    start_time = payload["start_time"]   # epoch SECONDS
+    start_time = payload["start_time"]  
     home_team  = payload["home_team"]
     away_team  = payload["away_team"]
-    kickoff_ms = start_time * 1000       # convert to ms
+    kickoff_ms = start_time * 1000  
     odds_by_bk = payload.get("odds", {})
 
     rows = []
@@ -85,10 +89,11 @@ def build_snapshots_for_fixture(payload: dict) -> list:
                     "outcome_id":    outcome_id,
                     "snapshot_mins": mins,
                     "snapshot_ts_ms": kickoff_ms - mins * 60 * 1000,
-                    "price":         snap.get("price"),
+                    "price":         net_exchange_price(snap.get("price"), bookmaker),
                     "changed_at_ms": snap.get("changedAt"),
                     "active":        snap.get("active", True),
                     "main_line":     snap.get("mainLine", False),
+                    "limit":         snap.get("limit"),       # Limit refers to liquidit or volume here
                 })
     return rows
 
@@ -128,7 +133,7 @@ def main():
 
     df = pd.DataFrame(all_rows)
 
-    # Keep only active prices
+    # We keep only active prices
     if "active" in df.columns:
         df = df[df["active"] != False]
 

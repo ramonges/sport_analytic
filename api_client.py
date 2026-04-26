@@ -1,14 +1,9 @@
-# =============================================================================
-# api_client.py
-# =============================================================================
-
 import time
 import logging
 import requests
 from config import API_KEY, BASE_URL, SLEEP_BETWEEN_OTHER_CALLS
 
 logger = logging.getLogger(__name__)
-
 
 class OddsApiClient:
     def __init__(self, api_key: str = API_KEY, base_url: str = BASE_URL):
@@ -33,7 +28,7 @@ class OddsApiClient:
 
             # Log body on error before raising
             if not resp.ok:
-                logger.error("HTTP %s on %s — body: %s", resp.status_code, url, resp.text[:300])
+                logger.error("HTTP %s on %s - body: %s", resp.status_code, url, resp.text[:300])
 
             resp.raise_for_status()
 

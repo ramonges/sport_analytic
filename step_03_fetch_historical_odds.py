@@ -1,8 +1,4 @@
-# =============================================================================
-# step_03_fetch_historical_odds.py — COMPRESSED VERSION
-# Saves only the fields needed for analysis (drops redundant/heavy fields).
-# Uses gzip JSON to cut disk usage ~70%.
-# =============================================================================
+# step_03_fetch_historical_odds.py
 
 import gzip
 import json
@@ -12,6 +8,7 @@ from pathlib import Path
 
 from api_client import OddsApiClient
 from config import DATA_DIR
+import time
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(levelname)s  %(message)s")
 logger = logging.getLogger(__name__)
@@ -21,8 +18,7 @@ METADATA_FILE  = os.path.join(DATA_DIR, "metadata.json")
 HISTORICAL_DIR = os.path.join(DATA_DIR, "historical")
 Path(HISTORICAL_DIR).mkdir(parents=True, exist_ok=True)
 
-# Fields to keep per tick — drop priceFractional, priceAmerican, playerId, marketActive
-KEEP_FIELDS = {"outcomeId", "marketId", "price", "changedAt", "active", "mainLine", "limit"}
+KEEP_FIELDS = {"outcomeId", "marketId", "price", "changedAt", "active", "mainLine", "limit", "volume"}
 
 client = OddsApiClient()
 
@@ -51,10 +47,27 @@ def extract_entries(raw: dict, bookmaker: str, target_mids: set) -> list:
             mid = tick.get("marketId")
             if target_mids and mid not in target_mids:
                 continue
-            # Keep only essential fields
             entry = {k: tick[k] for k in KEEP_FIELDS if k in tick}
             entries.append(entry)
     return entries
+
+
+def fetch_with_retry(fid: str, bk: str, max_retries: int = 3) -> dict | None:
+    backoff = 5
+    for attempt in range(max_retries):
+        try:
+            return client.get_fixture_odds_historical(fid, bk)
+        except Exception as e:
+            is_server_error = any(code in str(e) for code in ["502", "503", "504"])
+            if is_server_error and attempt < max_retries - 1:
+                logger.warning("  %-15s → %s, retry %d/%d in %ds...",
+                                bk, e, attempt + 1, max_retries - 1, backoff)
+                time.sleep(backoff)
+                backoff *= 2
+            else:
+                logger.warning("  %-15s → error: %s", bk, e)
+                return None
+    return None
 
 
 def fixture_file_path(fixture_id: str) -> str:
@@ -62,8 +75,6 @@ def fixture_file_path(fixture_id: str) -> str:
 
 
 def already_fetched(fixture_id: str) -> bool:
-    # Only trust .json.gz files (compressed, written atomically by this version)
-    # Old .json files may be corrupted (truncated by disk-full errors) — ignore them
     p = fixture_file_path(fixture_id)
     if not os.path.exists(p):
         return False
@@ -94,7 +105,6 @@ def main():
     bookmakers  = metadata.get("confirmed_bookmakers", [])
     target_mids = target_market_ids(metadata)
 
-    # Exclude books with no AH/OU data
     SKIP_BOOKS = {"4casters", "kalshi", "circasports", "bookmaker.eu", "paradisewager"}
     bookmakers = [b for b in bookmakers if b not in SKIP_BOOKS]
 
@@ -118,13 +128,10 @@ def main():
         logger.info("[%d/%d] %s vs %s", i+1, len(fixtures), home, away)
         odds = {}
         for bk in bookmakers:
-            try:
-                raw     = client.get_fixture_odds_historical(fid, bk)
-                entries = extract_entries(raw, bk, target_mids)
-                odds[bk] = entries
-            except Exception as e:
-                logger.warning("  %-15s → error: %s", bk, e)
-                odds[bk] = []
+            raw     = fetch_with_retry(fid, bk)
+            entries = extract_entries(raw, bk, target_mids) if raw else []
+            odds[bk] = entries
+            time.sleep(1.2)
 
         covered = sum(1 for v in odds.values() if v)
         logger.info("  Coverage: %d / %d bookmakers", covered, len(bookmakers))
@@ -135,6 +142,13 @@ def main():
         except OSError as e:
             logger.error("  SAVE FAILED %s: %s", fid, e)
             error += 1
+
+        time.sleep(3)
+
+        # pause every 10 fetched fixtures
+        if done > 0 and done % 10 == 0:
+            logger.info("Pausing 2 min after %d fixtures...", done)
+            time.sleep(120)
 
     logger.info("Done. fetched=%d  skipped=%d  errors=%d", done, skip, error)
 

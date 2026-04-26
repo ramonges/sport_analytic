@@ -1,17 +1,11 @@
-# =============================================================================
 # step_04_fetch_clv.py
-# Pull the native /fixtures/odds/clv endpoint for each EPL fixture.
 # This gives opening vs closing line values pre-computed by OddsPapi.
-# Saves to data/clv/{fixture_id}.json
-#
-# Run AFTER step_02 (fixtures must exist).
-# Rate limit: 100 req/min
-# =============================================================================
 
 import json
 import logging
 import os
 from pathlib import Path
+import time  
 
 from api_client import OddsApiClient
 from config import DATA_DIR
@@ -80,6 +74,7 @@ def main():
         except Exception as e:
             logger.error("CLV failed for %s: %s", fid, e)
             error += 1
+        time.sleep(0.6)
 
     logger.info("CLV done. Fetched=%d  Skipped=%d  Errors=%d", done, skip, error)
 

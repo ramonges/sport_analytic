@@ -1,259 +1,158 @@
 fixture_id,home_team,away_team,market_id,snapshot_mins,outcome_a_id,outcome_b_id,best_price_a,best_price_b,book_side_a,book_side_b,over_round,arb_margin_%
-id1000001761301093,Wolverhampton Wanderers,Liverpool FC,1010,1,1010,1011,2.462,2.52,sx.bet,prophetx,0.803,19.7
-id1000001761301093,Wolverhampton Wanderers,Liverpool FC,1010,2,1010,1011,2.462,2.52,sx.bet,prophetx,0.803,19.7
-id1000001761301093,Wolverhampton Wanderers,Liverpool FC,1010,15,1010,1011,2.454,2.5,sx.bet,prophetx,0.8075,19.25
-id1000001761301093,Wolverhampton Wanderers,Liverpool FC,1010,20,1010,1011,2.454,2.48,sx.bet,prophetx,0.8107,18.928
-id1000001761301117,West Ham United,Manchester City,1010,2,1010,1011,2.424,2.5,sx.bet,prophetx,0.8125,18.746
-id1000001761301103,Burnley FC,AFC Bournemouth,1010,15,1010,1011,2.424,2.5,sx.bet,prophetx,0.8125,18.746
-id1000001761301103,Burnley FC,AFC Bournemouth,1010,5,1010,1011,2.424,2.5,sx.bet,prophetx,0.8125,18.746
-id1000001761301103,Burnley FC,AFC Bournemouth,1010,1,1010,1011,2.424,2.5,sx.bet,prophetx,0.8125,18.746
-id1000001761301103,Burnley FC,AFC Bournemouth,1010,20,1010,1011,2.424,2.5,sx.bet,prophetx,0.8125,18.746
-id1000001761301103,Burnley FC,AFC Bournemouth,1010,10,1010,1011,2.424,2.5,sx.bet,prophetx,0.8125,18.746
-id1000001761301117,West Ham United,Manchester City,1010,1,1010,1011,2.424,2.48,sx.bet,prophetx,0.8158,18.423
-id1000001761301103,Burnley FC,AFC Bournemouth,1010,2,1010,1011,2.424,2.48,sx.bet,prophetx,0.8158,18.423
-id1000001761301079,AFC Bournemouth,Brentford FC,1010,2,1010,1011,2.402,2.5,sx.bet,betfair-ex,0.8163,18.368
-id1000001761301079,AFC Bournemouth,Brentford FC,1010,5,1010,1011,2.402,2.5,sx.bet,betfair-ex,0.8163,18.368
-id1000001761301079,AFC Bournemouth,Brentford FC,1010,1,1010,1011,2.402,2.5,sx.bet,betfair-ex,0.8163,18.368
-id1000001761301079,AFC Bournemouth,Brentford FC,1010,10,1010,1011,2.395,2.5,sx.bet,betfair-ex,0.8175,18.246
-id1000001761301079,AFC Bournemouth,Brentford FC,1010,15,1010,1011,2.395,2.5,sx.bet,betfair-ex,0.8175,18.246
-id1000001761301079,AFC Bournemouth,Brentford FC,1010,20,1010,1011,2.395,2.5,sx.bet,betfair-ex,0.8175,18.246
-id1000001761301117,West Ham United,Manchester City,1010,15,1010,1011,2.424,2.46,sx.bet,prophetx,0.819,18.095
-id1000001761301117,West Ham United,Manchester City,1010,5,1010,1011,2.424,2.46,sx.bet,prophetx,0.819,18.095
-id1000001761301117,West Ham United,Manchester City,1010,10,1010,1011,2.424,2.44,sx.bet,prophetx,0.8224,17.762
-id1000001761301117,West Ham United,Manchester City,1010,20,1010,1011,2.424,2.44,sx.bet,prophetx,0.8224,17.762
-id1000001761301111,Manchester United,Aston Villa,1010,20,1010,1011,2.367,2.48,sx.bet,prophetx,0.8257,17.43
-id1000001761301111,Manchester United,Aston Villa,1010,5,1010,1011,2.424,2.42,sx.bet,prophetx,0.8258,17.424
-id1000001761301111,Manchester United,Aston Villa,1010,15,1010,1011,2.367,2.46,sx.bet,prophetx,0.829,17.102
-id1000001761301111,Manchester United,Aston Villa,1010,1,1010,1011,2.424,2.4,sx.bet,prophetx,0.8292,17.079
-id1000001761301111,Manchester United,Aston Villa,1010,10,1010,1011,2.424,2.4,sx.bet,prophetx,0.8292,17.079
-id1000001761301111,Manchester United,Aston Villa,1010,2,1010,1011,2.424,2.4,sx.bet,prophetx,0.8292,17.079
-id1000001761301073,Manchester United,Crystal Palace,1010,20,1010,1011,2.332,2.4,sx.bet,betfair-ex,0.8455,15.452
-id1000001761301105,Chelsea FC,Newcastle United,1012,10,1012,1013,2.34,2.367,prophetx,sx.bet,0.8498,15.017
-id1000001761301105,Chelsea FC,Newcastle United,1012,15,1012,1013,2.34,2.367,prophetx,sx.bet,0.8498,15.017
-id1000001761301105,Chelsea FC,Newcastle United,1012,20,1012,1013,2.34,2.367,prophetx,sx.bet,0.8498,15.017
-id1000001761301073,Manchester United,Crystal Palace,1010,15,1010,1011,2.305,2.4,sx.bet,betfair-ex,0.8505,14.949
-id1000001761301105,Chelsea FC,Newcastle United,1012,2,1012,1013,2.38,2.319,prophetx,sx.bet,0.8514,14.861
-id1000001761301105,Chelsea FC,Newcastle United,1012,1,1012,1013,2.36,2.319,prophetx,sx.bet,0.8549,14.505
-id1000001761301105,Chelsea FC,Newcastle United,1012,5,1012,1013,2.34,2.319,prophetx,sx.bet,0.8586,14.143
-id1000001761301073,Manchester United,Crystal Palace,1010,2,1010,1011,2.254,2.4,sx.bet,betfair-ex,0.8603,13.968
-id1000001761301073,Manchester United,Crystal Palace,1010,1,1010,1011,2.254,2.4,sx.bet,betfair-ex,0.8603,13.968
-id1000001761301067,Fulham FC,Tottenham Hotspur,1010,10,1010,1011,2.299,2.32,sx.bet,prophetx,0.866,13.399
-id1000001761301073,Manchester United,Crystal Palace,1010,10,1010,1011,2.216,2.4,sx.bet,betfair-ex,0.8679,13.207
-id1000001761301073,Manchester United,Crystal Palace,1010,5,1010,1011,2.216,2.4,sx.bet,betfair-ex,0.8679,13.207
-id1000001761301067,Fulham FC,Tottenham Hotspur,1010,15,1010,1011,2.279,2.3,sx.bet,prophetx,0.8736,12.643
-id1000001761301061,Arsenal FC,Chelsea FC,1010,20,1010,1011,2.292,2.28,sx.bet,prophetx,0.8749,12.51
-id1000001761301067,Fulham FC,Tottenham Hotspur,1010,20,1010,1011,2.279,2.29,sx.bet,prophetx,0.8755,12.453
-id1000001761301061,Arsenal FC,Chelsea FC,1010,15,1010,1011,2.286,2.28,sx.bet,prophetx,0.876,12.396
-id1000001761301067,Fulham FC,Tottenham Hotspur,1010,5,1010,1011,2.273,2.29,sx.bet,prophetx,0.8766,12.337
-id1000001768096896,Brentford FC,Wolverhampton Wanderers,1010,10,1010,1011,2.254,2.3,sx.bet,prophetx,0.8784,12.156
-id1000001768096896,Brentford FC,Wolverhampton Wanderers,1010,5,1010,1011,2.254,2.3,sx.bet,prophetx,0.8784,12.156
-id1000001768096896,Brentford FC,Wolverhampton Wanderers,1010,15,1010,1011,2.228,2.32,sx.bet,prophetx,0.8799,12.013
-id1000001761301067,Fulham FC,Tottenham Hotspur,1010,1,1010,1011,2.216,2.32,sx.bet,prophetx,0.8823,11.77
-id1000001761301067,Fulham FC,Tottenham Hotspur,1010,2,1010,1011,2.216,2.32,sx.bet,prophetx,0.8823,11.77
-id1000001768096896,Brentford FC,Wolverhampton Wanderers,1010,20,1010,1011,2.228,2.3,sx.bet,prophetx,0.8836,11.638
-id1000001761301065,Burnley FC,Brentford FC,1010,20,1010,1011,2.266,2.26,sx.bet,prophetx,0.8838,11.622
-id1000001761301065,Burnley FC,Brentford FC,1010,15,1010,1011,2.26,2.25,sx.bet,prophetx,0.8869,11.308
-id1000001761301071,Liverpool FC,West Ham United,1012,15,1012,1013,2.26,2.235,prophetx,sx.bet,0.8899,11.009
-id1000001768096896,Brentford FC,Wolverhampton Wanderers,1010,1,1010,1011,2.254,2.24,sx.bet,prophetx,0.8901,10.992
-id1000001768096896,Brentford FC,Wolverhampton Wanderers,1010,2,1010,1011,2.254,2.24,sx.bet,prophetx,0.8901,10.992
-id1000001761301061,Arsenal FC,Chelsea FC,1010,1,1010,1011,2.21,2.28,sx.bet,prophetx,0.8911,10.891
-id1000001761301061,Arsenal FC,Chelsea FC,1010,10,1010,1011,2.204,2.28,sx.bet,prophetx,0.8923,10.768
-id1000001761301061,Arsenal FC,Chelsea FC,1010,5,1010,1011,2.204,2.28,sx.bet,prophetx,0.8923,10.768
-id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,1,1010,1011,2.21,2.27,sx.bet,prophetx,0.893,10.698
-id1000001761301071,Liverpool FC,West Ham United,1060,1,1060,1061,2.07,2.439,3et,polymarket,0.8931,10.69
-id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,15,1010,1011,2.222,2.25,sx.bet,prophetx,0.8945,10.551
-id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,10,1010,1011,2.222,2.25,sx.bet,prophetx,0.8945,10.551
-id1000001761301071,Liverpool FC,West Ham United,1012,20,1012,1013,2.24,2.222,prophetx,sx.bet,0.8965,10.353
-id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,5,1010,1011,2.21,2.25,sx.bet,prophetx,0.8969,10.307
-id1000001761301061,Arsenal FC,Chelsea FC,1010,2,1010,1011,2.18,2.28,sx.bet,prophetx,0.8973,10.269
-id1000001761301071,Liverpool FC,West Ham United,1012,5,1012,1013,2.25,2.204,prophetx,sx.bet,0.8982,10.184
-id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,2,1010,1011,2.21,2.24,sx.bet,prophetx,0.8989,10.108
-id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,20,1010,1011,2.216,2.22,sx.bet,prophetx,0.9017,9.829
-id1000001761301071,Liverpool FC,West Ham United,1012,10,1012,1013,2.25,2.168,prophetx,sx.bet,0.9057,9.43
-id1000001761301071,Liverpool FC,West Ham United,1012,2,1012,1013,2.2,2.204,prophetx,sx.bet,0.9083,9.173
-id1000001761301071,Liverpool FC,West Ham United,1012,1,1012,1013,2.2,2.204,prophetx,sx.bet,0.9083,9.173
-id1000001761301107,Crystal Palace,Leeds United,1010,5,1010,1011,2.21,2.151,prophetx,sx.bet,0.9174,8.261
-id1000001761301083,Everton FC,Burnley FC,1010,2,1010,1011,2.19,2.162,prophetx,sx.bet,0.9192,8.084
-id1000001761301083,Everton FC,Burnley FC,1010,1,1010,1011,2.19,2.162,prophetx,sx.bet,0.9192,8.084
-id1000001761301083,Everton FC,Burnley FC,1010,15,1010,1011,2.18,2.168,prophetx,sx.bet,0.92,8.003
-id1000001761301087,Leeds United,Sunderland AFC,1010,20,1010,1011,2.18,2.162,betfair-ex,sx.bet,0.9213,7.875
-id1000001761301083,Everton FC,Burnley FC,1010,5,1010,1011,2.18,2.162,prophetx,sx.bet,0.9213,7.875
-id1000001761301107,Crystal Palace,Leeds United,1010,1,1010,1011,2.19,2.151,prophetx,sx.bet,0.9215,7.848
-id1000001761301107,Crystal Palace,Leeds United,1010,2,1010,1011,2.19,2.151,prophetx,sx.bet,0.9215,7.848
-id1000001761301083,Everton FC,Burnley FC,1010,10,1010,1011,2.17,2.168,kaiyun,sx.bet,0.9221,7.792
-id1000001761301065,Burnley FC,Brentford FC,1010,5,1010,1011,2.145,2.19,sx.bet,prophetx,0.9228,7.718
-id1000001761301065,Burnley FC,Brentford FC,1010,10,1010,1011,2.133,2.2,sx.bet,prophetx,0.9234,7.663
-id1000001761301075,Newcastle United,Everton FC,1010,1,1010,1011,2.151,2.18,sx.bet,betfair-ex,0.9236,7.638
-id1000001761301075,Newcastle United,Everton FC,1010,10,1010,1011,2.151,2.18,sx.bet,betfair-ex,0.9236,7.638
-id1000001761301075,Newcastle United,Everton FC,1010,2,1010,1011,2.151,2.18,sx.bet,betfair-ex,0.9236,7.638
-id1000001761301075,Newcastle United,Everton FC,1010,15,1010,1011,2.151,2.18,sx.bet,betfair-ex,0.9236,7.638
-id1000001761301083,Everton FC,Burnley FC,1010,20,1010,1011,2.18,2.151,prophetx,sx.bet,0.9236,7.638
-id1000001761301075,Newcastle United,Everton FC,1010,5,1010,1011,2.151,2.18,sx.bet,betfair-ex,0.9236,7.638
-id1000001761301087,Leeds United,Sunderland AFC,1010,10,1010,1011,2.18,2.151,betfair-ex,sx.bet,0.9236,7.638
-id1000001761301087,Leeds United,Sunderland AFC,1010,15,1010,1011,2.18,2.151,betfair-ex,sx.bet,0.9236,7.638
-id1000001761301075,Newcastle United,Everton FC,1010,20,1010,1011,2.151,2.18,sx.bet,betfair-ex,0.9236,7.638
-id1000001761301065,Burnley FC,Brentford FC,1010,2,1010,1011,2.145,2.18,sx.bet,prophetx,0.9249,7.508
-id1000001761301107,Crystal Palace,Leeds United,1010,10,1010,1011,2.18,2.133,prophetx,sx.bet,0.9275,7.246
-id1000001761301107,Crystal Palace,Leeds United,1010,20,1010,1011,2.174,2.133,polymarket,sx.bet,0.9288,7.12
-id1000001761301107,Crystal Palace,Leeds United,1010,15,1010,1011,2.174,2.133,polymarket,sx.bet,0.9288,7.12
-id1000001761301065,Burnley FC,Brentford FC,1010,1,1010,1011,2.145,2.16,sx.bet,prophetx,0.9292,7.084
-id1000001761301087,Leeds United,Sunderland AFC,1010,2,1010,1011,2.18,2.111,betfair-ex,sx.bet,0.9324,6.758
-id1000001761301087,Leeds United,Sunderland AFC,1010,5,1010,1011,2.18,2.111,betfair-ex,sx.bet,0.9324,6.758
-id1000001761301087,Leeds United,Sunderland AFC,1010,1,1010,1011,2.18,2.111,betfair-ex,sx.bet,0.9324,6.758
-id1000001761301069,Leeds United,Manchester City,1010,20,1010,1011,2.122,2.13,sx.bet,prophetx,0.9407,5.926
-id1000001761301069,Leeds United,Manchester City,1010,15,1010,1011,2.122,2.1,sx.bet,prophetx,0.9474,5.256
-id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,15,1010,1011,2.057,2.16,sx.bet,betfair-ex,0.9491,5.089
-id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1066,1,1066,1067,2.084,2.13,sharpbet,betfair-ex,0.9493,5.067
-id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1066,2,1066,1067,2.084,2.13,sharpbet,betfair-ex,0.9493,5.067
-id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1066,5,1066,1067,2.081,2.13,sharpbet,betfair-ex,0.95,4.998
-id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,20,1010,1011,2.051,2.16,sx.bet,betfair-ex,0.9505,4.947
-id1000001761301109,Liverpool FC,Tottenham Hotspur,1012,15,1012,1013,2.174,2.036,polymarket,sx.bet,0.9511,4.886
-id1000001761301109,Liverpool FC,Tottenham Hotspur,1012,1,1012,1013,2.174,2.036,polymarket,sx.bet,0.9511,4.886
-id1000001761301109,Liverpool FC,Tottenham Hotspur,1012,20,1012,1013,2.174,2.036,polymarket,sx.bet,0.9511,4.886
-id1000001761301109,Liverpool FC,Tottenham Hotspur,1012,10,1012,1013,2.174,2.036,polymarket,sx.bet,0.9511,4.886
-id1000001761301109,Liverpool FC,Tottenham Hotspur,1012,5,1012,1013,2.174,2.036,polymarket,sx.bet,0.9511,4.886
-id1000001761301109,Liverpool FC,Tottenham Hotspur,1012,2,1012,1013,2.174,2.036,polymarket,sx.bet,0.9511,4.886
-id1000001761301113,Nottingham Forest,Fulham FC,1010,15,1010,1011,2.13,2.073,prophetx,sx.bet,0.9519,4.812
-id1000001761301113,Nottingham Forest,Fulham FC,1010,10,1010,1011,2.13,2.073,prophetx,sx.bet,0.9519,4.812
-id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1066,20,1066,1067,2.064,2.13,singbet,betfair-ex,0.954,4.602
-id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1066,15,1066,1067,2.064,2.13,singbet,betfair-ex,0.954,4.602
-id1000001761301113,Nottingham Forest,Fulham FC,1010,1,1010,1011,2.12,2.073,prophetx,sx.bet,0.9541,4.591
-id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1066,10,1066,1067,2.063,2.13,sharpbet,betfair-ex,0.9542,4.579
-id1000001761301069,Leeds United,Manchester City,1010,5,1010,1011,2.078,2.11,sx.bet,prophetx,0.9552,4.483
-id1000001761301069,Leeds United,Manchester City,1010,10,1010,1011,2.078,2.11,sx.bet,prophetx,0.9552,4.483
-id1000001761301113,Nottingham Forest,Fulham FC,1010,20,1010,1011,2.11,2.073,prophetx,sx.bet,0.9563,4.367
-id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,1,1010,1011,2.11,2.073,prophetx,sx.bet,0.9563,4.367
-id1000001761301113,Nottingham Forest,Fulham FC,1010,2,1010,1011,2.11,2.073,prophetx,sx.bet,0.9563,4.367
-id1000001761301113,Nottingham Forest,Fulham FC,1010,5,1010,1011,2.11,2.073,prophetx,sx.bet,0.9563,4.367
-id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,2,1010,1011,2.1,2.073,prophetx,sx.bet,0.9586,4.142
-id1000001761301085,Fulham FC,West Ham United,10172,1,10172,10173,2.08,2.09,betfair-ex,pinnacle,0.9592,4.076
-id1000001761301085,Fulham FC,West Ham United,10172,2,10172,10173,2.08,2.09,betfair-ex,pinnacle,0.9592,4.076
-id1000001761301085,Fulham FC,West Ham United,10172,5,10172,10173,2.08,2.09,betfair-ex,pinnacle,0.9592,4.076
-id1000001761301085,Fulham FC,West Ham United,10172,10,10172,10173,2.08,2.09,betfair-ex,pinnacle,0.9592,4.076
-id1000001761301085,Fulham FC,West Ham United,10172,15,10172,10173,2.08,2.09,betfair-ex,pinnacle,0.9592,4.076
-id1000001761301069,Leeds United,Manchester City,1010,1,1010,1011,2.078,2.09,sx.bet,prophetx,0.9597,4.03
-id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,5,1010,1011,2.09,2.073,prophetx,sx.bet,0.9609,3.914
-id1000001761301085,Fulham FC,West Ham United,10172,20,10172,10173,2.08,2.08,betfair-ex,pinnacle,0.9615,3.846
-id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,1,1010,1011,2.005,2.16,sx.bet,betfair-ex,0.9617,3.828
-id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,2,1010,1011,2.005,2.16,sx.bet,betfair-ex,0.9617,3.828
-id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,5,1010,1011,2.005,2.16,sx.bet,betfair-ex,0.9617,3.828
-id1000001761301069,Leeds United,Manchester City,1010,2,1010,1011,2.078,2.08,sx.bet,prophetx,0.962,3.8
-id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,20,1010,1011,2.08,2.073,prophetx,sx.bet,0.9632,3.684
-id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,10,1010,1011,2.08,2.073,prophetx,sx.bet,0.9632,3.684
-id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,15,1010,1011,2.08,2.073,prophetx,sx.bet,0.9632,3.684
-id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,10,1010,1011,1.99,2.16,sx.bet,betfair-ex,0.9655,3.452
-id1000001761301107,Crystal Palace,Leeds United,1072,20,1072,1073,2.04,2.07,kaiyun,198bet,0.9733,2.671
-id1000001761301107,Crystal Palace,Leeds United,1072,5,1072,1073,2.04,2.07,kaiyun,198bet,0.9733,2.671
-id1000001761301107,Crystal Palace,Leeds United,1072,10,1072,1073,2.04,2.07,kaiyun,198bet,0.9733,2.671
-id1000001761301107,Crystal Palace,Leeds United,1072,15,1072,1073,2.04,2.07,kaiyun,198bet,0.9733,2.671
-id1000001761301053,Sunderland AFC,Fulham FC,1072,20,1072,1073,2.15,1.96,3et,betfair-ex,0.9753,2.468
-id1000001761301053,Sunderland AFC,Fulham FC,1072,15,1072,1073,2.149,1.96,singbet,betfair-ex,0.9755,2.446
-id1000001761301095,Aston Villa,Chelsea FC,1010,20,1010,1011,1.8,2.381,prophetx,polymarket,0.9755,2.445
-id1000001761301095,Aston Villa,Chelsea FC,1010,15,1010,1011,1.8,2.381,prophetx,polymarket,0.9755,2.445
-id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,20,1010,1011,2.02,2.08,sx.bet,betfair-ex,0.9758,2.418
-id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,15,1010,1011,2.02,2.08,sx.bet,betfair-ex,0.9758,2.418
-id1000001761301053,Sunderland AFC,Fulham FC,1072,2,1072,1073,2.136,1.96,singbet,betfair-ex,0.9784,2.163
-id1000001761301053,Sunderland AFC,Fulham FC,1072,1,1072,1073,2.136,1.96,singbet,betfair-ex,0.9784,2.163
-id1000001761301117,West Ham United,Manchester City,10174,10,10174,10175,2.09,2.0,pinnacle,198bet,0.9785,2.153
-id1000001761301095,Aston Villa,Chelsea FC,1010,5,1010,1011,1.787,2.381,prophetx,polymarket,0.9796,2.041
-id1000001761301055,Tottenham Hotspur,Arsenal FC,1010,20,1010,1011,1.962,2.128,prophetx,polymarket,0.9796,2.039
-id1000001761301053,Sunderland AFC,Fulham FC,1072,10,1072,1073,2.13,1.96,pinnacle,betfair-ex,0.9797,2.031
-id1000001761301053,Sunderland AFC,Fulham FC,1072,5,1072,1073,2.13,1.96,pinnacle,betfair-ex,0.9797,2.031
-id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,15,1010,1011,2.0,2.083,prophetx,polymarket,0.9801,1.992
-id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,20,1010,1011,2.0,2.083,prophetx,polymarket,0.9801,1.992
-id1000001761301087,Leeds United,Sunderland AFC,1068,20,1068,1069,1.98,2.1,betfair-ex,pinnacle,0.9812,1.876
-id1000001761301087,Leeds United,Sunderland AFC,1068,15,1068,1069,1.98,2.1,betfair-ex,pinnacle,0.9812,1.876
-id1000001761301095,Aston Villa,Chelsea FC,1010,1,1010,1011,1.781,2.381,prophetx,polymarket,0.9815,1.853
-id1000001761301095,Aston Villa,Chelsea FC,1010,10,1010,1011,1.781,2.381,prophetx,polymarket,0.9815,1.853
-id1000001761301099,Arsenal FC,Everton FC,1010,10,1010,1011,2.025,2.05,sx.bet,prophetx,0.9816,1.837
-id1000001761301055,Tottenham Hotspur,Arsenal FC,1010,15,1010,1011,1.952,2.128,pinnacle,polymarket,0.9822,1.778
-id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,10,1010,1011,1.99,2.083,singbet,polymarket,0.9826,1.741
-id1000001761301053,Sunderland AFC,Fulham FC,1010,5,1010,1011,2.222,1.877,polymarket,prophetx,0.9828,1.719
-id1000001761301053,Sunderland AFC,Fulham FC,1010,10,1010,1011,2.222,1.877,polymarket,prophetx,0.9828,1.719
-id1000001761301117,West Ham United,Manchester City,10174,15,10174,10175,2.07,2.0,pinnacle,198bet,0.9831,1.691
-id1000001761301117,West Ham United,Manchester City,10174,20,10174,10175,2.07,2.0,pinnacle,198bet,0.9831,1.691
-id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,1,1010,1011,1.99,2.08,kaiyun,betfair-ex,0.9833,1.672
-id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,2,1010,1011,1.99,2.08,kaiyun,betfair-ex,0.9833,1.672
-id1000001761301095,Aston Villa,Chelsea FC,1010,2,1010,1011,1.775,2.381,prophetx,polymarket,0.9834,1.663
-id1000001761301087,Leeds United,Sunderland AFC,1068,5,1068,1069,1.98,2.09,betfair-ex,pinnacle,0.9835,1.648
-id1000001761301087,Leeds United,Sunderland AFC,1068,2,1068,1069,1.98,2.09,betfair-ex,pinnacle,0.9835,1.648
-id1000001761301087,Leeds United,Sunderland AFC,1068,1,1068,1069,1.98,2.09,betfair-ex,pinnacle,0.9835,1.648
-id1000001761301099,Arsenal FC,Everton FC,1010,5,1010,1011,2.025,2.04,sx.bet,betfair-ex,0.984,1.598
-id1000001761301099,Arsenal FC,Everton FC,1010,1,1010,1011,2.025,2.04,sx.bet,betfair-ex,0.984,1.598
-id1000001761301099,Arsenal FC,Everton FC,1010,15,1010,1011,2.025,2.04,sx.bet,betfair-ex,0.984,1.598
-id1000001761301099,Arsenal FC,Everton FC,1010,20,1010,1011,2.025,2.04,sx.bet,betfair-ex,0.984,1.598
-id1000001761301099,Arsenal FC,Everton FC,1010,2,1010,1011,2.025,2.04,sx.bet,betfair-ex,0.984,1.598
-id1000001761301053,Sunderland AFC,Fulham FC,1010,2,1010,1011,2.222,1.87,polymarket,prophetx,0.9848,1.52
-id1000001761301053,Sunderland AFC,Fulham FC,1010,15,1010,1011,2.222,1.87,polymarket,prophetx,0.9848,1.52
-id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,2,1010,1011,1.98,2.083,3et,polymarket,0.9851,1.487
-id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,1,1010,1011,1.98,2.083,prophetx,polymarket,0.9851,1.487
-id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,5,1010,1011,1.98,2.083,prophetx,polymarket,0.9851,1.487
-id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,5,1010,1011,1.98,2.08,prophetx,betfair-ex,0.9858,1.418
+id1000001761301117,West Ham United,Manchester City,1012,720,1012,1013,2.52,2.4857,prophetx,sx.bet,0.7991,20.087
+id1000001761301117,West Ham United,Manchester City,1012,300,1012,1013,2.52,2.47,prophetx,sx.bet,0.8017,19.832
+id1000001761301119,AFC Bournemouth,Manchester United,1012,300,1012,1013,2.5,2.4778,prophetx,sx.bet,0.8036,19.642
+id1000001761301119,AFC Bournemouth,Manchester United,1012,60,1012,1013,2.48,2.4778,prophetx,sx.bet,0.8068,19.32
+id1000001761301093,Wolverhampton Wanderers,Liverpool FC,1010,1,1010,1011,2.4328,2.52,sx.bet,prophetx,0.8079,19.212
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,10,1010,1011,2.4543,2.48,sx.bet,prophetx,0.8107,18.933
+id1000001761301119,AFC Bournemouth,Manchester United,1012,10,1012,1013,2.48,2.4543,prophetx,sx.bet,0.8107,18.933
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,20,1010,1011,2.4543,2.48,sx.bet,prophetx,0.8107,18.933
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,1,1010,1011,2.4543,2.48,sx.bet,prophetx,0.8107,18.933
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,30,1010,1011,2.4543,2.48,sx.bet,prophetx,0.8107,18.933
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,60,1010,1011,2.4543,2.48,sx.bet,prophetx,0.8107,18.933
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,5,1010,1011,2.4543,2.48,sx.bet,prophetx,0.8107,18.933
+id1000001761301119,AFC Bournemouth,Manchester United,1012,1,1012,1013,2.48,2.4543,prophetx,sx.bet,0.8107,18.933
+id1000001761301119,AFC Bournemouth,Manchester United,1012,5,1012,1013,2.48,2.4543,prophetx,sx.bet,0.8107,18.933
+id1000001761301093,Wolverhampton Wanderers,Liverpool FC,1010,1440,1010,1011,2.4102,2.52,sx.bet,prophetx,0.8117,18.827
+id1000001761301119,AFC Bournemouth,Manchester United,1012,30,1012,1013,2.46,2.4543,prophetx,sx.bet,0.8139,18.605
+id1000001761301119,AFC Bournemouth,Manchester United,1012,20,1012,1013,2.46,2.4543,prophetx,sx.bet,0.8139,18.605
+id1000001761301103,Burnley FC,AFC Bournemouth,1010,5,1010,1011,2.3955,2.5,sx.bet,prophetx,0.8174,18.255
+id1000001761301103,Burnley FC,AFC Bournemouth,1010,10,1010,1011,2.3955,2.5,sx.bet,prophetx,0.8174,18.255
+id1000001761301103,Burnley FC,AFC Bournemouth,1010,20,1010,1011,2.3955,2.5,sx.bet,prophetx,0.8174,18.255
+id1000001761301103,Burnley FC,AFC Bournemouth,1010,1,1010,1011,2.3955,2.5,sx.bet,prophetx,0.8174,18.255
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,300,1010,1011,2.3671,2.52,sx.bet,prophetx,0.8193,18.072
+id1000001761301117,West Ham United,Manchester City,1010,1,1010,1011,2.3955,2.48,sx.bet,prophetx,0.8207,17.933
+id1000001761301073,Manchester United,Crystal Palace,1010,720,1010,1011,2.4328,2.44,sx.bet,prophetx,0.8209,17.911
+id1000001761301117,West Ham United,Manchester City,1010,60,1010,1011,2.4102,2.46,sx.bet,prophetx,0.8214,17.86
+id1000001761301117,West Ham United,Manchester City,1010,5,1010,1011,2.3955,2.46,sx.bet,prophetx,0.8239,17.605
+id1000001761301117,West Ham United,Manchester City,1010,30,1010,1011,2.3955,2.44,sx.bet,prophetx,0.8273,17.272
+id1000001761301117,West Ham United,Manchester City,1010,20,1010,1011,2.3955,2.44,sx.bet,prophetx,0.8273,17.272
+id1000001761301117,West Ham United,Manchester City,1010,10,1010,1011,2.3955,2.44,sx.bet,prophetx,0.8273,17.272
+id1000001761301079,AFC Bournemouth,Brentford FC,1010,1440,1010,1011,2.3671,2.44,sx.bet,prophetx,0.8323,16.771
+id1000001761301103,Burnley FC,AFC Bournemouth,1010,30,1010,1011,2.3328,2.46,sx.bet,prophetx,0.8352,16.483
+id1000001761301069,Leeds United,Manchester City,1010,1800,1010,1011,2.3887,2.4,sx.bet,prophetx,0.8353,16.469
+id1000001761301127,Fulham FC,Burnley FC,1010,300,1010,1011,2.3602,2.42,sx.bet,prophetx,0.8369,16.309
+id1000001761301073,Manchester United,Crystal Palace,1010,60,1010,1011,2.3671,2.38,sx.bet,prophetx,0.8426,15.737
+id1000001761301105,Chelsea FC,Newcastle United,1012,720,1012,1013,2.4,2.3397,prophetx,sx.bet,0.8441,15.592
+id1000001761301073,Manchester United,Crystal Palace,1010,300,1010,1011,2.3602,2.36,sx.bet,prophetx,0.8474,15.259
+id1000001761301105,Chelsea FC,Newcastle United,1012,300,1012,1013,2.38,2.3397,prophetx,sx.bet,0.8476,15.242
+id1000001761301105,Chelsea FC,Newcastle United,1012,20,1012,1013,2.34,2.3397,prophetx,sx.bet,0.8548,14.524
+id1000001761301105,Chelsea FC,Newcastle United,1012,30,1012,1013,2.34,2.3397,prophetx,sx.bet,0.8548,14.524
+id1000001761301105,Chelsea FC,Newcastle United,1012,10,1012,1013,2.34,2.3397,prophetx,sx.bet,0.8548,14.524
+id1000001761301105,Chelsea FC,Newcastle United,1012,1,1012,1013,2.36,2.2926,prophetx,sx.bet,0.8599,14.009
+id1000001761301111,Manchester United,Aston Villa,1010,1440,1010,1011,2.2926,2.36,sx.bet,prophetx,0.8599,14.009
+id1000001761301105,Chelsea FC,Newcastle United,1012,60,1012,1013,2.3,2.3397,prophetx,sx.bet,0.8622,13.78
+id1000001761301073,Manchester United,Crystal Palace,1010,30,1010,1011,2.2995,2.34,sx.bet,prophetx,0.8622,13.777
+id1000001761301105,Chelsea FC,Newcastle United,1012,5,1012,1013,2.34,2.2926,prophetx,sx.bet,0.8635,13.647
+id1000001761301111,Manchester United,Aston Villa,1010,720,1010,1011,2.2995,2.32,sx.bet,prophetx,0.8659,13.408
+id1000001761301073,Manchester United,Crystal Palace,1010,20,1010,1011,2.3054,2.3,sx.bet,prophetx,0.8686,13.145
+id1000001761301103,Burnley FC,AFC Bournemouth,1010,60,1010,1011,2.2407,2.36,sx.bet,prophetx,0.87,12.998
+id1000001761301067,Fulham FC,Tottenham Hotspur,1010,10,1010,1011,2.273,2.32,sx.bet,prophetx,0.871,12.902
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,720,1010,1011,2.2858,2.3,sx.bet,prophetx,0.8723,12.773
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,1440,1010,1011,2.2858,2.3,sx.bet,prophetx,0.8723,12.773
+id1000001761301067,Fulham FC,Tottenham Hotspur,1010,30,1010,1011,2.2858,2.3,sx.bet,prophetx,0.8723,12.773
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,720,1010,1011,2.2662,2.3,sx.bet,prophetx,0.8761,12.394
+id1000001761301071,Liverpool FC,West Ham United,1012,1440,1012,1013,2.28,2.273,prophetx,sx.bet,0.8785,12.146
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,60,1010,1011,2.2475,2.3,sx.bet,prophetx,0.8797,12.029
+id1000001761301061,Arsenal FC,Chelsea FC,1010,20,1010,1011,2.2662,2.28,sx.bet,prophetx,0.8799,12.013
+id1000001761301069,Leeds United,Manchester City,1010,1440,1010,1011,2.2662,2.28,sx.bet,prophetx,0.8799,12.013
+id1000001761301067,Fulham FC,Tottenham Hotspur,1010,20,1010,1011,2.2534,2.29,sx.bet,prophetx,0.8805,11.955
+id1000001761301067,Fulham FC,Tottenham Hotspur,1010,5,1010,1011,2.2475,2.29,sx.bet,prophetx,0.8816,11.839
+id1000001761301071,Liverpool FC,West Ham United,1012,720,1012,1013,2.27,2.2662,prophetx,sx.bet,0.8818,11.82
+id1000001761301061,Arsenal FC,Chelsea FC,1010,30,1010,1011,2.2534,2.28,sx.bet,prophetx,0.8824,11.763
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,1800,1010,1011,2.2534,2.28,sx.bet,prophetx,0.8824,11.763
+id1000001761301061,Arsenal FC,Chelsea FC,1010,300,1010,1011,2.2603,2.27,sx.bet,prophetx,0.883,11.705
+id1000001761301073,Manchester United,Crystal Palace,1010,1,1010,1011,2.2289,2.28,sx.bet,prophetx,0.8872,11.276
+id1000001761301067,Fulham FC,Tottenham Hotspur,1010,1,1010,1011,2.1917,2.32,sx.bet,prophetx,0.8873,11.269
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,300,1010,1011,2.2475,2.26,sx.bet,prophetx,0.8874,11.259
+id1000001761301103,Burnley FC,AFC Bournemouth,1010,720,1010,1011,2.2348,2.25,sx.bet,prophetx,0.8919,10.809
+id1000001761301061,Arsenal FC,Chelsea FC,1010,60,1010,1011,2.2103,2.27,sx.bet,prophetx,0.893,10.704
+id1000001761301103,Burnley FC,AFC Bournemouth,1010,300,1010,1011,2.2162,2.26,sx.bet,prophetx,0.8937,10.63
+id1000001761301073,Manchester United,Crystal Palace,1010,10,1010,1011,2.1917,2.28,sx.bet,prophetx,0.8949,10.513
+id1000001761301061,Arsenal FC,Chelsea FC,1010,1,1010,1011,2.1858,2.28,sx.bet,prophetx,0.8961,10.391
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,30,1010,1011,2.2534,2.21,sx.bet,prophetx,0.8963,10.374
+id1000001761301061,Arsenal FC,Chelsea FC,1010,10,1010,1011,2.1799,2.28,sx.bet,prophetx,0.8973,10.267
+id1000001761301061,Arsenal FC,Chelsea FC,1010,5,1010,1011,2.1799,2.28,sx.bet,prophetx,0.8973,10.267
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,1,1010,1011,2.1858,2.27,sx.bet,prophetx,0.898,10.197
+id1000001761301067,Fulham FC,Tottenham Hotspur,1010,300,1010,1011,2.2221,2.23,sx.bet,prophetx,0.8985,10.154
+id1000001761301073,Manchester United,Crystal Palace,1010,5,1010,1011,2.1917,2.26,sx.bet,prophetx,0.8987,10.125
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,10,1010,1011,2.1976,2.25,sx.bet,prophetx,0.8995,10.051
+id1000001761301067,Fulham FC,Tottenham Hotspur,1010,720,1010,1011,2.2221,2.22,sx.bet,prophetx,0.9005,9.952
+id1000001761301061,Arsenal FC,Chelsea FC,1010,720,1010,1011,2.2103,2.23,sx.bet,prophetx,0.9009,9.914
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,5,1010,1011,2.1858,2.25,sx.bet,prophetx,0.9019,9.806
+id1000001761301123,Brighton & Hove Albion,Liverpool FC,1010,1440,1010,1011,2.2034,2.23,sx.bet,prophetx,0.9023,9.773
+id1000001761301067,Fulham FC,Tottenham Hotspur,1010,60,1010,1011,2.2103,2.21,sx.bet,prophetx,0.9049,9.508
+id1000001761301139,Wolverhampton Wanderers,Arsenal FC,1010,20,1010,1011,2.1917,2.22,sx.bet,prophetx,0.9067,9.328
+id1000001761301075,Newcastle United,Everton FC,1010,720,1010,1011,2.1917,2.2,sx.bet,prophetx,0.9108,8.918
+id1000001761301075,Newcastle United,Everton FC,1010,1440,1010,1011,2.1976,2.19,sx.bet,prophetx,0.9117,8.833
+id1000001761301071,Liverpool FC,West Ham United,1012,1800,1012,1013,2.19,2.174,prophetx,sx.bet,0.9166,8.341
+id1000001761301075,Newcastle United,Everton FC,1010,1800,1010,1011,2.1623,2.2,sx.bet,prophetx,0.917,8.298
+id1000001761301121,Aston Villa,West Ham United,1010,720,1010,1011,2.174,2.18,sx.bet,prophetx,0.9187,8.131
+id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,300,1010,1011,2.21,2.1446,prophetx,sx.bet,0.9188,8.123
+id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,720,1010,1011,2.19,2.1505,prophetx,sx.bet,0.9216,7.838
+id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,720,1010,1011,2.1564,2.18,sx.bet,prophetx,0.9225,7.755
+id1000001761301087,Leeds United,Sunderland AFC,1010,1440,1010,1011,2.18,2.1162,prophetx,sx.bet,0.9313,6.874
+id1000001761301107,Crystal Palace,Leeds United,1010,1440,1010,1011,2.14,2.1103,prophetx,sx.bet,0.9411,5.885
+id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,60,1010,1011,2.11,2.1329,prophetx,sx.bet,0.9428,5.722
+id1000001761301127,Fulham FC,Burnley FC,1010,1440,1010,1011,2.1103,2.12,sx.bet,prophetx,0.9456,5.444
+id1000001761301125,Everton FC,Chelsea FC,1010,1440,1010,1011,2.1103,2.12,sx.bet,prophetx,0.9456,5.444
+id1000001761301065,Burnley FC,Brentford FC,1010,720,1010,1011,2.0937,2.1,sx.bet,prophetx,0.9538,4.618
+id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,1440,1010,1011,2.0937,2.1,sx.bet,prophetx,0.9538,4.618
+id1000001761301107,Crystal Palace,Leeds United,1010,1800,1010,1011,2.08,2.1103,kaiyun,sx.bet,0.9546,4.537
+id1000001761301121,Aston Villa,West Ham United,1010,1800,1010,1011,2.0829,2.09,sx.bet,prophetx,0.9586,4.143
+id1000001761301065,Burnley FC,Brentford FC,1010,1440,1010,1011,2.078,2.09,sx.bet,prophetx,0.9597,4.03
+id1000001761301099,Arsenal FC,Everton FC,1010,720,1010,1011,2.11,2.0564,prophetx,sx.bet,0.9602,3.979
+id1000001761301059,AFC Bournemouth,Sunderland AFC,1010,1800,1010,1011,2.0829,2.08,sx.bet,prophetx,0.9609,3.913
+id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,1,1010,1011,2.11,2.0515,prophetx,sx.bet,0.9614,3.863
+id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,30,1010,1011,2.1,2.0564,prophetx,sx.bet,0.9625,3.753
+id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,720,1010,1011,2.0721,2.08,sx.bet,prophetx,0.9634,3.663
+id1000001761301109,Liverpool FC,Tottenham Hotspur,1012,1440,1012,1013,2.1,2.0515,prophetx,sx.bet,0.9636,3.637
+id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,5,1010,1011,2.09,2.0515,prophetx,sx.bet,0.9659,3.409
+id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,20,1010,1011,2.08,2.0515,prophetx,sx.bet,0.9682,3.179
+id1000001761301115,Sunderland AFC,Brighton & Hove Albion,1010,10,1010,1011,2.08,2.0515,prophetx,sx.bet,0.9682,3.179
+id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,300,1010,1011,2.0515,2.08,sx.bet,prophetx,0.9682,3.179
+id1000001761301107,Crystal Palace,Leeds United,1010,720,1010,1011,2.08,2.0408,prophetx,sx.bet,0.9708,2.922
+id1000001761301131,Leeds United,Brentford FC,1010,1440,1010,1011,2.03,2.07,sx.bet,prophetx,0.9757,2.429
+id1000001761301065,Burnley FC,Brentford FC,1010,1800,1010,1011,2.0241,2.07,sx.bet,prophetx,0.9771,2.286
+id1000001761301125,Everton FC,Chelsea FC,1010,5,1010,1011,2.0153,2.07,sx.bet,prophetx,0.9793,2.07
+id1000001761301125,Everton FC,Chelsea FC,1010,10,1010,1011,2.0153,2.06,sx.bet,prophetx,0.9816,1.835
+id1000001761301061,Arsenal FC,Chelsea FC,1064,30,1064,1065,1.99,2.087,kaiyun,singbet,0.9817,1.833
+id1000001761301125,Everton FC,Chelsea FC,1010,1,1010,1011,2.0202,2.05,sx.bet,prophetx,0.9828,1.719
+id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,1800,1010,1011,2.05,2.0202,prophetx,sx.bet,0.9828,1.719
+id1000001761301131,Leeds United,Brentford FC,1010,60,1010,1011,2.0084,2.06,sx.bet,kaiyun,0.9833,1.666
+id1000001761301131,Leeds United,Brentford FC,1010,720,1010,1011,2.0153,2.05,sx.bet,prophetx,0.984,1.599
+id1000001761301125,Everton FC,Chelsea FC,1010,30,1010,1011,2.0153,2.05,sx.bet,prophetx,0.984,1.599
+id1000001761301125,Everton FC,Chelsea FC,1010,20,1010,1011,2.0153,2.05,sx.bet,prophetx,0.984,1.599
+id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,300,1010,1011,2.0241,2.04,sx.bet,prophetx,0.9842,1.576
+id1000001761301155,Nottingham Forest,Aston Villa,1072,60,1072,1073,1.97,2.097,kaiyun,vertex,0.9845,1.551
+id1000001761301061,Arsenal FC,Chelsea FC,1064,60,1064,1065,1.99,2.074,kaiyun,vertex,0.9847,1.533
 id1000001761301061,Arsenal FC,Chelsea FC,1064,20,1064,1065,1.99,2.067,kaiyun,vertex,0.9863,1.369
-id1000001761301039,Aston Villa,Leeds United,1010,20,1010,1011,1.887,2.19,polymarket,prophetx,0.9866,1.344
-id1000001761301097,Manchester City,Nottingham Forest,10174,2,10174,10175,2.099,1.96,singbet,betfair-ex,0.9866,1.338
-id1000001761301097,Manchester City,Nottingham Forest,10174,1,10174,10175,2.099,1.96,singbet,betfair-ex,0.9866,1.338
-id1000001761301055,Tottenham Hotspur,Arsenal FC,1010,5,1010,1011,1.935,2.128,prophetx,polymarket,0.9867,1.328
-id1000001761301055,Tottenham Hotspur,Arsenal FC,1010,1,1010,1011,1.935,2.128,prophetx,polymarket,0.9867,1.328
-id1000001761301055,Tottenham Hotspur,Arsenal FC,1010,2,1010,1011,1.935,2.128,prophetx,polymarket,0.9867,1.328
-id1000001761301087,Leeds United,Sunderland AFC,1068,10,1068,1069,1.98,2.075,betfair-ex,singbet,0.987,1.302
-id1000001761301053,Sunderland AFC,Fulham FC,1010,1,1010,1011,2.222,1.862,polymarket,prophetx,0.9871,1.29
-id1000001761301105,Chelsea FC,Newcastle United,1066,20,1066,1067,2.029,2.02,198bet,kaiyun,0.9879,1.21
-id1000001761301107,Crystal Palace,Leeds United,1072,1,1072,1073,1.98,2.07,pinnacle,198bet,0.9881,1.186
-id1000001761301107,Crystal Palace,Leeds United,1072,2,1072,1073,1.98,2.07,kaiyun,198bet,0.9881,1.186
-id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,10,1010,1011,1.97,2.08,singbet,betfair-ex,0.9884,1.162
-id1000001766905890,Everton FC,Manchester United,1076,5,1076,1077,1.96,2.09,betfair-ex,pinnacle,0.9887,1.133
-id1000001761301097,Manchester City,Nottingham Forest,10174,5,10174,10175,2.09,1.96,pinnacle,betfair-ex,0.9887,1.133
-id1000001761301097,Manchester City,Nottingham Forest,10174,10,10174,10175,2.09,1.96,pinnacle,betfair-ex,0.9887,1.133
-id1000001761301105,Chelsea FC,Newcastle United,1066,2,1066,1067,2.029,2.015,198bet,vertex,0.9891,1.087
-id1000001761301105,Chelsea FC,Newcastle United,1066,15,1066,1067,2.029,2.015,198bet,vertex,0.9891,1.087
-id1000001761301105,Chelsea FC,Newcastle United,1066,10,1066,1067,2.029,2.015,198bet,vertex,0.9891,1.087
-id1000001761301105,Chelsea FC,Newcastle United,1066,5,1066,1067,2.029,2.015,198bet,vertex,0.9891,1.087
-id1000001761301055,Tottenham Hotspur,Arsenal FC,1010,10,1010,1011,1.926,2.128,prophetx,polymarket,0.9891,1.086
-id1000001761301051,Nottingham Forest,Liverpool FC,1010,15,1010,1011,1.754,2.38,polymarket,prophetx,0.9903,0.971
-id1000001761301051,Nottingham Forest,Liverpool FC,1010,10,1010,1011,1.754,2.38,polymarket,prophetx,0.9903,0.971
-id1000001761301051,Nottingham Forest,Liverpool FC,1010,5,1010,1011,1.754,2.38,polymarket,prophetx,0.9903,0.971
-id1000001761301051,Nottingham Forest,Liverpool FC,1010,2,1010,1011,1.754,2.38,polymarket,prophetx,0.9903,0.971
-id1000001761301039,Aston Villa,Leeds United,1010,2,1010,1011,1.887,2.17,polymarket,prophetx,0.9908,0.923
-id1000001761301039,Aston Villa,Leeds United,1010,15,1010,1011,1.887,2.17,polymarket,prophetx,0.9908,0.923
-id1000001766905890,Everton FC,Manchester United,1076,2,1076,1077,1.96,2.08,betfair-ex,pinnacle,0.991,0.903
-id1000001766905890,Everton FC,Manchester United,1076,1,1076,1077,1.96,2.08,betfair-ex,pinnacle,0.991,0.903
-id1000001761301065,Burnley FC,Brentford FC,10172,1,10172,10173,2.05,1.98,pinnacle,singbet,0.9929,0.714
-id1000001761301039,Aston Villa,Leeds United,1010,1,1010,1011,1.887,2.16,polymarket,prophetx,0.9929,0.71
-id1000001761301073,Manchester United,Crystal Palace,1064,20,1064,1065,1.97,2.06,betfair-ex,kaiyun,0.9931,0.695
-id1000001766905890,Everton FC,Manchester United,1076,10,1076,1077,1.96,2.07,betfair-ex,sharpbet,0.9933,0.67
-id1000001761301051,Nottingham Forest,Liverpool FC,1010,1,1010,1011,1.754,2.36,polymarket,prophetx,0.9939,0.615
-id1000001761301105,Chelsea FC,Newcastle United,1066,1,1066,1067,2.029,1.994,198bet,vertex,0.9944,0.564
-id1000001766905890,Everton FC,Manchester United,1076,15,1076,1077,1.96,2.065,betfair-ex,vertex,0.9945,0.553
-id1000001766905890,Everton FC,Manchester United,1076,20,1076,1077,1.96,2.065,betfair-ex,vertex,0.9945,0.553
-id1000001761301117,West Ham United,Manchester City,10174,1,10174,10175,2.021,2.0,sharpbet,198bet,0.9948,0.52
-id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1010,20,1010,1011,2.0,2.02,betfair-ex,kaiyun,0.995,0.495
-id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1010,15,1010,1011,2.0,2.02,betfair-ex,kaiyun,0.995,0.495
+id1000001761301099,Arsenal FC,Everton FC,1010,10,1010,1011,2.0045,2.05,sx.bet,prophetx,0.9867,1.332
+id1000001761301155,Nottingham Forest,Aston Villa,1010,5,1010,1011,2.02,2.029,singbet,prophetx,0.9879,1.21
+id1000001761301125,Everton FC,Chelsea FC,1010,60,1010,1011,2.0084,2.04,sx.bet,prophetx,0.9881,1.19
+id1000001761301135,Newcastle United,Sunderland AFC,1010,720,1010,1011,2.0153,2.029,sx.bet,prophetx,0.9891,1.094
+id1000001761301099,Arsenal FC,Everton FC,1010,30,1010,1011,2.0045,2.04,sx.bet,prophetx,0.9891,1.093
+id1000001761301099,Arsenal FC,Everton FC,1010,20,1010,1011,2.0045,2.04,sx.bet,prophetx,0.9891,1.093
+id1000001761301099,Arsenal FC,Everton FC,1010,5,1010,1011,2.0045,2.04,sx.bet,kaiyun,0.9891,1.093
+id1000001761301131,Leeds United,Brentford FC,1010,1800,1010,1011,2.0153,2.02,sx.bet,prophetx,0.9913,0.874
+id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,720,1010,1011,2.0045,2.029,sx.bet,kaiyun,0.9917,0.827
+id1000001761301099,Arsenal FC,Everton FC,1010,1,1010,1011,2.0045,2.029,sx.bet,prophetx,0.9917,0.827
+id1000001761301137,Tottenham Hotspur,Nottingham Forest,1010,720,1010,1011,2.029,2.0045,prophetx,sx.bet,0.9917,0.827
+id1000001761301147,Chelsea FC,Manchester City,1076,60,1076,1077,2.009,2.024,kaiyun,vertex,0.9918,0.817
+id1000001761301147,Chelsea FC,Manchester City,1076,30,1076,1077,2.009,2.024,kaiyun,vertex,0.9918,0.817
+id1000001761301143,Brentford FC,Everton FC,1010,60,1010,1011,2.07,1.962,198bet,prophetx,0.9928,0.722
+id1000001761301055,Tottenham Hotspur,Arsenal FC,1010,60,1010,1011,1.971,2.06,prophetx,kaiyun,0.9928,0.721
+id1000001761301145,Burnley FC,Brighton & Hove Albion,1010,300,1010,1011,1.7664,2.34,sx.bet,prophetx,0.9935,0.651
+id1000001761301099,Arsenal FC,Everton FC,1010,300,1010,1011,2.029,1.9947,prophetx,sx.bet,0.9942,0.582
+id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,30,1010,1011,1.9996,2.02,sx.bet,prophetx,0.9951,0.485
+id1000001761301077,Wolverhampton Wanderers,Aston Villa,1078,30,1078,1079,1.95,2.073,kaiyun,vertex,0.9952,0.479
 id1000001761301077,Wolverhampton Wanderers,Aston Villa,1078,20,1078,1079,1.95,2.073,kaiyun,vertex,0.9952,0.479
-id1000001761301077,Wolverhampton Wanderers,Aston Villa,1078,15,1078,1079,1.95,2.073,kaiyun,vertex,0.9952,0.479
-id1000001761301073,Manchester United,Crystal Palace,1064,10,1064,1065,1.97,2.05,betfair-ex,kaiyun,0.9954,0.458
-id1000001761301073,Manchester United,Crystal Palace,1064,15,1064,1065,1.97,2.05,betfair-ex,kaiyun,0.9954,0.458
-id1000001761301053,Sunderland AFC,Fulham FC,1010,20,1010,1011,2.222,1.833,polymarket,prophetx,0.9956,0.44
-id1000001766905890,Everton FC,Manchester United,1010,2,1010,1011,1.833,2.222,prophetx,polymarket,0.9956,0.44
-id1000001766905890,Everton FC,Manchester United,1010,20,1010,1011,1.833,2.222,prophetx,polymarket,0.9956,0.44
-id1000001761301039,Aston Villa,Leeds United,1010,10,1010,1011,1.887,2.14,polymarket,prophetx,0.9972,0.277
-id1000001761301051,Nottingham Forest,Liverpool FC,1010,20,1010,1011,1.754,2.34,polymarket,prophetx,0.9975,0.252
-id1000001766905890,Everton FC,Manchester United,1010,1,1010,1011,1.826,2.222,prophetx,polymarket,0.9977,0.231
-id1000001761301117,West Ham United,Manchester City,10174,5,10174,10175,2.009,2.0,pinnacle,198bet,0.9978,0.224
-id1000001761301089,Newcastle United,Manchester United,10174,1,10174,10175,2.009,2.0,3et,betfair-ex,0.9978,0.224
-id1000001761301089,Newcastle United,Manchester United,10174,2,10174,10175,2.009,2.0,3et,betfair-ex,0.9978,0.224
-id1000001761301095,Aston Villa,Chelsea FC,10172,5,10172,10173,2.0,2.009,pinnacle,betfair-ex,0.9978,0.224
-id1000001761301089,Newcastle United,Manchester United,10174,20,10174,10175,2.009,2.0,3et,betfair-ex,0.9978,0.224
-id1000001768096896,Brentford FC,Wolverhampton Wanderers,10172,15,10172,10173,1.97,2.04,betfair-ex,pinnacle,0.9978,0.219
-id1000001761301071,Liverpool FC,West Ham United,1062,10,1062,1063,1.934,2.08,pinnacle,betfair-ex,0.9978,0.217
-id1000001761301117,West Ham United,Manchester City,10174,2,10174,10175,2.008,2.0,sharpbet,198bet,0.998,0.199
-id1000001761301055,Tottenham Hotspur,Arsenal FC,1082,15,1082,1083,1.93,2.081,kaiyun,vertex,0.9987,0.133
-id1000001761301071,Liverpool FC,West Ham United,1062,1,1062,1063,1.93,2.08,singbet,betfair-ex,0.9989,0.11
-id1000001761301071,Liverpool FC,West Ham United,1062,5,1062,1063,1.93,2.08,singbet,betfair-ex,0.9989,0.11
-id1000001761301071,Liverpool FC,West Ham United,1062,15,1062,1063,1.93,2.08,kaiyun,betfair-ex,0.9989,0.11
-id1000001761301071,Liverpool FC,West Ham United,1062,20,1062,1063,1.93,2.08,kaiyun,betfair-ex,0.9989,0.11
-id1000001761301071,Liverpool FC,West Ham United,1062,2,1062,1063,1.93,2.08,singbet,betfair-ex,0.9989,0.11
-id1000001761301093,Wolverhampton Wanderers,Liverpool FC,1082,15,1082,1083,2.02,1.984,betfair-ex,sharpbet,0.9991,0.092
-id1000001766905890,Everton FC,Manchester United,1010,15,1010,1011,1.82,2.222,prophetx,polymarket,0.9995,0.05
-id1000001766905890,Everton FC,Manchester United,1010,5,1010,1011,1.82,2.222,prophetx,polymarket,0.9995,0.05
-id1000001761301053,Sunderland AFC,Fulham FC,10170,20,10170,10171,1.91,2.1,betfair-ex,3et,0.9998,0.025
+id1000001761301095,Aston Villa,Chelsea FC,10172,300,10172,10173,1.996,2.02,vertex,kaiyun,0.9961,0.395
+id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1010,20,1010,1011,1.99,2.02,prophetx,kaiyun,0.9976,0.244
+id1000001761301051,Nottingham Forest,Liverpool FC,1076,60,1076,1077,2.04,1.97,kaiyun,198bet,0.9978,0.219
+id1000001761301063,Brighton & Hove Albion,Nottingham Forest,1010,20,1010,1011,1.9996,2.009,sx.bet,prophetx,0.9979,0.214
+id1000001761301077,Wolverhampton Wanderers,Aston Villa,1010,30,1010,1011,2.009,1.9996,prophetx,sx.bet,0.9979,0.214
+id1000001761301131,Leeds United,Brentford FC,1010,20,1010,1011,1.98,2.029,sx.bet,prophetx,0.9979,0.21
+id1000001761301045,Crystal Palace,Wolverhampton Wanderers,1010,60,1010,1011,1.98,2.029,prophetx,kaiyun,0.9979,0.21
+id1000001761301145,Burnley FC,Brighton & Hove Albion,10172,5,10172,10173,1.97,2.037,198bet,vertex,0.9985,0.147
+id1000001761301099,Arsenal FC,Everton FC,1010,60,1010,1011,1.952,2.053,prophetx,singbet,0.9994,0.061
